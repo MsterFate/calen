@@ -135,4 +135,5 @@ CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000',
      'https://calen-yq2c-aqkfyse76-msterfate.vercel.app',
     'https://calen-yq2c.vercel.app',
+    "https://reliable-naiad-372950.netlify.app"
 ]
