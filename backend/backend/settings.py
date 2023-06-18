@@ -139,5 +139,8 @@ CORS_ORIGIN_WHITELIST = [
     "https://reliable-naiad-372950.netlify.app",
     "http://3.91.5.168",
     "http://34.236.146.98",
+    "http://34.236.146.98:3000",
+
     
 ]
+CORS_ALLOW_ALL_ORIGINS = True
