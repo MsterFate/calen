@@ -1,0 +1,86 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: left;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.btn-danger {
+  background-color: red;
+  border-color: darkred;
+}
+
+.btn-danger:hover {
+  background-color: #5f1f1f;
+  border-color: darkred;
+}
+
+.navbar {
+  display: flex;
+  align-items: flex-start; /* Cambia a 'flex-start' */
+  justify-content: flex-start; /* Cambia a 'flex-start' */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #34064e;
+  padding-top: 100px; /* Ajusta este valor según tus necesidades */
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: auto;
+}
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li {
+  margin-bottom: 20px;
+  color: #FFFFFF; /* Color de los elementos de la lista para un alto contraste */
+}
+
+.navbar a {
+  color: #ffffff; /* Color de los enlaces */
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #AE280B; /* Color de los enlaces cuando se pasa el mouse por encima */
+}
+
+.navbar .navbar-brand {
+  color: #DC9600; /* Color del título o marca del navbar para un alto contraste */
+}

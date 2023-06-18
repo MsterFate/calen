@@ -1,0 +1,100 @@
+.calendario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.numero-dia {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+}
+
+.botones {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mes-ano {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 5px 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.dias {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  width: 100%;
+  align-items: start; /* Alinea los elementos de la cuadrícula al inicio del contenedor */
+  align-content: start; /* Alinea las filas de la cuadrícula al inicio del contenedor */
+}
+
+.dia {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  height: 100px; /* Establece una altura fija para los días */
+  overflow: auto; /* Permite el desplazamiento si el contenido supera la altura */
+}
+.eventos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.evento {
+  padding: 2px;
+  color: white;
+  font-size: 0.8em;
+  border-radius: 3px;
+  margin-bottom: 2px;
+}
+
+.evento:nth-child(1) {
+  background: hsl(11, 88%, 36%) ; /* Rojo con 50% de transparencia */
+}
+
+.evento:nth-child(2) {
+  background: hsl(66, 100%, 40%) ; /* Verde con 50% de transparencia */
+}
+
+.evento:nth-child(3) {
+  background: hsl(278, 70%, 29%) ; /* Azul con 50% de transparencia */
+}
+
+.evento:nth-child(4) {
+  background: hsl(41, 100%, 43%) ; /* Amarillo con 50% de transparencia */
+}
