@@ -39,7 +39,13 @@ class App extends Component {
   refreshList = () => {
     axios
       .get("/api/todos/")
-      .then((res) => this.setState({ todoList: res.data }))
+      .then((res) => {
+        if (Array.isArray(res.data)) {
+          this.setState({ todoList: res.data });
+        } else {
+          console.error("Error: res.data no es un array", res.data);
+        }
+      })
       .catch((err) => console.log(err));
   };
 
