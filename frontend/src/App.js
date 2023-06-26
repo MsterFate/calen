@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Modal from "./components/Modal";
 import axios from "axios";
 import Calendario from "./Calendario";
-import moment from "moment-timezone";
+
 import Navbar from "./components/Navbar";
 import "./App.css";
 
@@ -80,7 +80,7 @@ class App extends Component {
   };
 
   editItem = (item) => {
-    const hora = item.fecha_hora.slice(11, 16);
+    
     this.setState({
       activeItem: {
         ...item,
