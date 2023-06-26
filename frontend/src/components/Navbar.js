@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Calendario</a></li>
-        <li><a href="#">Citas</a></li>
+        <li><a href="www.google.com">Inicio</a></li>
+        <li><a href="www.google.com">Calendario</a></li>
+        <li><a href="www.google.com">Citas</a></li>
       </ul>
     </div>
   );
