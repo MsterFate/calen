@@ -63,7 +63,7 @@ class App extends Component {
       return;
     }
     axios
-      .post("http://3.208.23.742:8000/api/todos/", item)
+      .post("http://3.208.23.74:8000/api/todos/", item)
       .then((res) => this.refreshList());
   };
 
