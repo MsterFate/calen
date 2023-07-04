@@ -38,7 +38,7 @@ class App extends Component {
 
   refreshList = () => {
     axios
-      .get("http://3.208.23.74:8000/api/todos/")
+      .get("http://3.93.173.69:8000/api/todos/")
       .then((res) => {
         if (Array.isArray(res.data)) {
           this.setState({ todoList: res.data });
@@ -58,18 +58,18 @@ class App extends Component {
 
     if (item.id) {
       axios
-        .put(`http://3.208.23.74:8000/api/todos/${item.id}/`, item)
+        .put(`http://3.93.173.69:8000/api/todos/${item.id}/`, item)
         .then((res) => this.refreshList());
       return;
     }
     axios
-      .post("http://3.208.23.74:8000/api/todos/", item)
+      .post("http://3.93.173.69:8000/api/todos/", item)
       .then((res) => this.refreshList());
   };
 
   handleDelete = (item) => {
     axios
-      .delete(`http://3.208.23.74:8000/api/todos/${item.id}/`)
+      .delete(`http://3.93.173.69:8000/api/todos/${item.id}/`)
       .then((res) => this.refreshList());
   };
 
